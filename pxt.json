@@ -1,5 +1,6 @@
 {
     "name": "Prinsen og Anne",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "device": "*"
