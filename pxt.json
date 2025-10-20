@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "story": "github:riknoll/arcade-story#v1.3.1"
     },
     "files": [
         "main.blocks",

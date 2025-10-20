@@ -1,123 +1,89 @@
-scene.setBackgroundImage(img`
-    7eefffeeeeeeeefeefeeeeeeeeee77db111dd7eeddbdbbb1d777e777777777777ee777777e77ee77e77ee7e7ee7eeeeee7777ee7eee77cfffccccee777e7eeeeeeeeeeee7e77eeee7777777eeeeeeff
-    e777eff7eeeeeeeeeeeeee7fe7e7e777c1dbdcee1dd1dd11d1eee7ed77e777e777777e777777e777e77777e7eeeeeeee777777e77e7e77777bfccee77ee77eeee7777e7ee777e777e777777ee7e7efe
-    e777fffeeeeeefeeeeeeee7e7ee7ee7e7ddbbc7ed1dddb111dee77e777e777eee777777777777777ee777ee7ee77eee777e777e77e7ee777efcfccf77ee77ee7eee77e7ee7777777777e777ee7eeeee
-    7eefeee7eeeeeeeeeeefeeeeeeeeeeeee7e111111dbbd1d1d77dbe77e7bd7d7eeeeeee777ee777eff7e7eeeeeeeee77eeeeeeee77ee7ee77efcccfcfeeee7ee777e777eee77e777e777ee77ee7e7777
-    7e7f7eeeeefee77eeeeeeeeeeeeeee77e7bd111dd1b7d111777d777eeed1deeeee777ee77efe7f77e7eeeeeeeeeee7eeeeeeeee77ee77efffccccfceeeee7ee77e7e77eeeeeee77e777ee77ee7ee777
-    7777e7eeeeee7eeeeefe7feeeeeeeec7ee77cd11ddbd999d7bd1bdddbdd1dddc77777eeee7eefeeefeeeeeeeeeeeeeeeeeeeeeeeeee7e7efccccccfceeeeeee7777eeeefeeeeeeeee777e7e777eee77
-    ee777eeee7eeeeeeeeeeeeeeeeeee111dee7dd11ddb9999dddd1dd11ddd91ddbe777eee7eeeeefeeeeeeeeeeeeeeeeeeeeeeeeeeeee7e77ecccccccceeeeeee7eeeeeefee7eeeeeeee7eeee777e7eee
-    ee7ee77e7eeeeeeeeeeeeeeeeee77bd111ddcc111999991d11d11111d9999911dee77e77eeeeeeeeeeeeeeeeeeeeeeefceeeeeeeeeeeee77fcfccccceeeeeefeeeeeff77777efeeeee777ee777e7777
-    eee7e7eeeefbdeeeeeeeeeeeeeddbd11111111dd199999d1dd11dd199999999dd77eeee777eee7ee7eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefccfccccceeeeecceeeee77eeeeeefeee7e7eeeeeee7777
-    ffeee7e7eecd1ceeeeeeeee7777ddb11111dddd199999991dd11dd11119999111beeeeeeefee77eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefcffccccccceeefcceeeee7b7e7eeeefee7eeeeefeeeee7ee
-    feeeeeb771dc1eeeeee7eee7dbd7dd1111dddddd999999999dddd99999999991111777eeeeee7eebdbeeeeeeeeeeeeeeeeeeeeeeeeeeeecccccccccccceccfceee7ee777eeeeeeeeffeeeeeeeeeeefe
-    feeeee1d7d1bdeeeeeeeee7ebddd11111111ddddd999999999ddd99999999991111c7deee7e7eebdbeeeeeeeeeeeeeeeeeeeeeeeeeeeeeecccccccccfccccceee777e7eeeeeee77eee77eeefeeeeeef
-    efcfeed1d111ceedeeeb77c11d111111111111dd9999999999dddd999999999991d1ddddee7eeedcbd1d1111eeeeeeeeeeeeeeeeeeeeeeecccccccccfcccceee777be7eeeeeeeee777777eeeeeeeeee
-    ccfeee1d1111beebeeed77e1111111111111111dd999999999dddd9999999999991dddd1ee7ebbcd111111117ebeeeeeeeeeeeeeeeeeeeecccccccccfccfcee7777eeeeeefeeee7777e7e77ee777eee
-    cfeeeed11111beeeee111db11111111111111111ddd9999999ddd999999999999999bcccdbbccd11beb11eeede77eeeeeeeeeeeeeeeeeeeeccccccccccccceb77beeeeeeeeeeeefeee7eee777e77777
-    ef77eed11111ceeeee11111111111111111111111dd9999991111999999999999999dbecdddd1d11beb117eebeeeeeeeeeeeeeeeeeeeeeeeccccccccfccfcebe7beeeeeeeeeeeefe7e7ee77eee77e77
-    7e7eeebd111cceeeed1111111111111111111111111dddddddd119999999999999999bcbd111dd1111e111bedbbede7eeeeeeeeeeeeeeeeeeccccccccccccbbeeeeeeeeeeeeefe77ee7ee7eeeeeeeee
-    e77f777d11dcceeeb1111111111111111111111111111ddddd111999999999999999bbbdddbddb1111e11deb117e77eebdbceeeeeeeeeeeeeccccccccccfebbeeeeeeeeeeeeeee77ee7eeeeeeeeefee
-    e77eeeeedcceeeee11111111111111111111111111111111111111d999999999999999999b7d1d1111111111117ee7ed111ddbeeeeeeeeeeeecccccccccbeeeeeeeeeeeee7eee7ee7eeeeeeeeeeeefe
-    fee7efeeeeeeeeeb111111111111111111111111111111111111111999999999999999999b7b11111111111111777eb11111ddeeeeeeeeeeeeccccccfccbeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefffe7
-    7eeefceeefeeeeb1111111111111111111111111111111111111111d999999999999999999bbd1111111111111d7dd11111199beeeeeeeeeeeeccccccbcbeeeeeeeeeeeeeeeeeeeeceecceeefffccee
-    77efcfeeeeeeee1111111111111111111111111111111111111111111111999999999999997b11111111111111dedd1111d1d9deeeeeeeeeeeceecececbeeeeeeeeeeeeccceeeeeeeeeeeeeeefcceff
-    effcfceeeeeeed11111111111111111111111111111111111111111111111999999999999dd111111111111111db17ed1111dddbeeeeeeeeeeeeefccbccfeeeeeeeeeeeeecccffee777eeeeeefffeee
-    cccccceeeeeee11111111111111111111111111111111111111111111111111999999999911111111111111111111d7eddb1dddbeeeeeeeeeeeeeebcfcfeeeeeeeeeeeeeecccc777e777eeeefeffe7e
-    cccccceeeeeee11111111111111111111111111111111111111111111111111d99999999911111111111111111d1d77edbedddddeeeeeeeeeeeeececcceeeeeeeeeeeeeeeeccce777e7ee77ceeff77e
-    cffccceee7eeb1111111111111111111111111111111111111111111111111111ddd9999d11111111111111dd111d77bbdeb99ddeeeeeeeeeeeeecccceeeeeeeeeeeeeeeeefefeee77eee7ee77eee7e
-    fccfce7eeeeed11111111111111111111111111111111111111111111111111111111d99d111111111111dddddd1dbd11bbd99ddbeeeeeeeeeeeeccceeeeeeeeeeeeeeeeeeeeefe777eee7e77777e7e
-    cfccceeeeeed11111111111111111111111111111111111111111111111111111111111d11111111111ddddddddddddddddd1dddeeeeeeeeeeeeeeceeeeeeeeeeeeeeeeeeeeeeeefecee7ee77eefeee
-    cfceceeeeeed11111111111111111111111111111111111111111111111111111111111111111111111dddddddddddddd1dcdd1dbeeeeeeeeeeeeeceeeeeeeeeeeeeeeeeeeef7eeecccee7e77ee77ee
-    cef7feeeeeed111111111111111111111111111111111111111111111111111111111111111d11111ddddddd9d999ddc7bdddbcbeeeeee7eeeeeeeeeeeeeeeeeeeeeeeeeefeeeee7ee7eeeee77eeeef
-    feeefceeeeeb111111111dd1111111111111111111111111111111111111111111111111111d111ddddddd99999d9d1bccbbbbbcee4444d7eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee7eeeee7e7eee
-    feefffeeeee7dd11111111d1d111111111111111111111111111111111111111111111111111111d1dddddd99999ddbecddcdddb444445dd77eeeeeeeeeeee4ee4eeee4eeeee777e7777e7eeefe7fee
-    feeefceeeeeecb11111111d111111111111111111111111111111111111111111111111d111d1dd1ddddddd99999db7e7dbbddb4444455dd54eeeecceeeeee4d444ddbd4e44eeeeeee77eeee7ee7fef
-    fccffeeeeeebbbd11111111d1111111111111111111111111111111111111111111111111bccb11d111111199d999bd1d9bcb45544555555554eeeeeeeeeebdbddbc1dd4344eeeeeeee7eee77ee7eef
-    fcccceeeeeebd111111111dd1111111111111111111111111111111111111111111111111cecc1d1111111199d991dd9991b44554445555555544efeeeeeededdddedddd3dee7eeeeeeeeeeee7ee7ee
-    eeefcceeeeeeb11111111dd99ddd111111d111dd1111111111111111111111111111111bbeecccdd11dbddd99d999d999db75555545554445555554eeeeeededddddd44ddeeffeeee77eeee7eeeeeee
-    eeeeeeeeeeeeb11111111dd999dd111111d11111111111111111111111111111111111bccccccc11d1dbddd999999d999dbd5555555554444445555eeeeeeddddddd444ddfefeefeee7eeeeeeeeeeee
-    efeeeeeeeeeeeddd111119999999ddd11ddd11111111111111111111111111111111d1bc6cccccddddd4bd1999999d99999d5555555554dddde4455eefeeeedd4ddddd444eeeee777ee77eeeeee77ee
-    fcfeeeeeeeeeebb1cc119999999999dd1999dd111111111111111111111111111111dd9666cccc99dd744d999999bbd999945555555444ddddb44454efeeeeed4dddb4dd44777777e7777ee777eeefe
-    cffeeeeeeeeeebdbcb1d99999999999999999d11dd11111111111111111111111111db1b68cccc999d444d999999beb9999d5555555444dbddee4454eeeeeeeddddddddd47bddd7777e77ee777ee7e7
-    cccfeeeeeeeeeb9ddcd9999999999999999999ddddd99911111111111111d1111111db1968cccc999d444b9999be4eebb997455555544bcbddd4444eeeeeeeeebddd4d4eb66ccbee77e777777777eee
-    ccfceeeeeeeeeb9bddd9999999999999999999dddd99991111111111111ddd111ddd1bd966cccc999d4eed999bb44eeee997545555444bcfddd4444fefeeeeeeedd3ddbb6666cb7e77e77e777777777
-    ccccceeeeeeeeeddcb199999999999999999999999999999111111111999911111d1dcdbc6cccc99d74ee966db44eeeeeb97454555444ddddddde4ee777e7eeeeebdbeb6666666cc7ee77ee7e7ee7ee
-    ccccceeeeeeeeeddbbd999999999999999999999999999991111111111d9111111ddcc1bccccc699d44ec668de4444bbebd4444554444d3dddd44eef77eeeeeeed1dee666666666c6ceeeee7e7eefee
-    cccccceeeeeeeedddd9999999999999999999999999999999999999d11111111111bcc666c8cc669444ec66cb44444e44bb4455554444444ddddebefeee7ffed111dc4c66666666668cbee7eefeee7e
-    cccccceeeeeeeeddd19999999999999999999999999999999999999111111111111ccc666ccc666b44476ccc444444444ee55555444444dddddbeebe7e7ecce1111cb4b666666666666cc77e7fee77e
-    cccccceeeeeeebd19999999999999999999999999999999999999911111111111dbcbb666ccc667744ee77d55555555554454455444d4dddddddeeeeeeeec11111beb4b666666666666886c77e7e7ee
-    fcccccfeeeeebbd999999999999999999999999999999999999991111111111dddcb66666cc7666c4ee455555555555555454455444d44ddddddefbeefec111113e2e4c6666666666666666c7777eee
-    cccccceeeebbbeb9999999999999999999999999999999999999911111d9d9991966dd44bcc76fce4e4555555544444454444444444443dddddeedefecc11111322224b666666666666666667777e7e
-    cccccceeeeeeeebd999999999999999999999999999999999999911999999999999bee4eecc7cfce4e5555544444ee444444444444444dddbbbfeeecccd1111de2222eb66666666666666666ee77eee
-    cccccceeeebeeeeb999999999999999999999999999999999999999999999999999cd4444cc6ccee44eeeeeeebeeeeeeeee4444444454ddeeeeeeccc111111cce22222cc6666666666666666ccee7ee
-    cccccceeeeeeeeeb99999999999999999999999999999999999999999999999999bcde444cc6cceeeeeeebbbddb44bbebbee4444444454deeeceecb111111c6ce22222ec666666666666666667eeeee
-    fccffceeeeeeeeee999999999999999999999999999999999999999999999999996cde4e4cccc4eeeebddddbbeeeeeeeeee4444444444bd9bb99911111198668ce2e34eea6666666668666666cee7ef
-    ccffceeeeeeeeeee999999999999999999999999999999999999999999999999996cde4e4cce44eefefbebeeeeeeeeeeeee44445444dd9999996969dd1c666668ee4d4eee6666666666666666ceee7e
-    cfccebbeeeeeeeee999999999999999999999999999999999999999999999999996cd444ecceeeeeeeebbbee4eeeeeeeeee44444444b99999999699ddc6668866ce44444ec686666866666666ceeeee
-    cfccceeeeeeeeeee99c999999999999999999999999999999999999999999999996cd44eecbb45444bbbebdeeeebbeeeeebb4444444b99999999999bfc66666888cd44b4eec86668886666666677eee
-    ccccbfeeeeeeeeeeb9c999999999999999999999999999999911111111111999996cde4eece55554dbddbbdeeeeddeeeeebbe444e44b99999999999ccc66666888cd44d3eeec66888866666666eeeec
-    bbbccceeeeeeeeeebc9999999999999999999999999999991111111111111bd1db6cde4ee55555555ddddd7eeecbdeeeebb9eeebe44bb9999999999cc666866888cdd444deeec8666866666666eee7b
-    ccccfceeeeeeeeeeec99999999999999999991119dbbb999911911111111dbd11b6cdeee555555555577b7deeecbdeeeebb9ebcbe44bb9999999999cc666866888bdd4444eeec88688666666667eefe
-    ccfcfcceeeeeeee4eb9999911111d11111111111bbb4ec6b9999911111111cd11bce4e45555555555555577dbeccbeeeecc6ccc6e4b6699999999996666668688c11d444ddeddb888866666666e7e77
-    ccccfccceeeeeeeeed99911111111111111111dbe44eeeecbd99911111111cc11bcd445555555555555557b7dbccbeeeec666cc6e7b6699999999996666668666c11de444dbb9999666666666677e7e
-    fffccccceeeeeeeeed1111111111111dddd74444444eeeeeeeeddd1d111dccc6d754dd5577777777b7777bbbbdd7eeeec66666ccbc666999999996666666688861d1cb44d44b9666666666666c77eee
-    ccfcfccceeeeeeeeebd1111111111ddbb77444444444eeeeeeeeebdd11ddb6cccd54dd7777bbbbbbbbbbbbbbbbddeeecc66686cfecb666999999966666666cc891d1ce4e4d4b6666666666666677e7e
-    ccccfccceeeeeeeeee1111111ddb777774444444444eeeeeeeeeeeeeeeb44ccff77b6699996666ddbb666666666b7bebc66666ccbec66699999dbd1666668bd111d6ce7eeeb66666666666666677eee
-    ccccfccceeeeeeeeeeb1111dd777477774444444444eeeeeeeeeeeeeee744c8cfb666666666666d5bb6696666666bbbbb6c666cceec66699999bbd1166666d111168cb4dccc699666666666666eeefe
-    ccccfccceeeeeeeeeebeeee74444444444444444444eeeeeeeeeeeeeee444ccff666666666766d554e66666666666ceeec666ccceeec6666666dd11119c9111118686e4e8cb6666b6866666666eeeee
-    ccccffcceeeeeeeeeeeeeee74e44444444444444444eeeeeeeeeeee4ee444c6ffb666666ccecb45544cccccccc666ceeeccccccceeeec6666666111111111111d686cb4d68ccbbcc6666666666eeeee
-    ccccffcceeeeeeeeeeeeeeeeeeeeeeeeeeeeee4444eee4eeeeeeeeeeee4eebcccbbceeeeb44dd555554444eeccccceeeecccccceeeeee666666669911111111cc8686c4d666eecbb66666666667eeee
-    cccfffcceeeeeeeeeeeeeeeeeeeeeeeeeeeeee44447ee444eeeeeee77e4eeb6ff4eddd444d54455555554eebbbbbeeeeecceeeceeeeeec6666666669d1111bccc8866c446668ceeeeecc66666ceeeee
-    cccfffcceeeeeeeeeee4eeee44eeeeeeeeeeeee4444eee44ee4eebc777ecbcfcc44dd4eee444444444444eecee44eeceeefeeeeeeeeeee66666666661111dcccc8668c4466686ceeeeeeecc6cc7e777
-    fcccffcceeeeeeeeeeeeeee7ee77444eeeeeeeeeeeeee44eee7b766666cc66fcf44eeeee4ee4444444eefefcceee77ceeeefefeeeeeeee66666666666cddfeecc6686c44666868ceee2eeeecee77777
-    fcccfccceeeeeeeeeee4eee7777777777777eeeeeeeeeeee47d7d666666c66ccc444eeee4eed4444eeeefffccccf6cceceeeffeeeeeeee66666666666cfffeecc6666ce4c66868cceeeeeeeeeee7777
-    fcccfccceeeeeeeeeeee777777777777777777777777777d77776666686f6ccce444eeee4eeb4eeeeeeffffccccc7cceeeeeeeeeeeeeeb66666666666ccfceecc8666ce4c6668c8cceeeeeeeef77777
-    cfcfccccceeeeeeeeee7777777777777777777ee7777777777776666686c8ccce44beeee4eee4d444beeecfcccccccccceeeeeeeeeeeed6666666666bcffceeccc86ccb4ecccccccceeeeeeecce7777
-    ffcfccccceeeeeeeeee777777777777777777777777777777777668668688ccce44beeee4eee44eeeeeffcfcccccceecceeeeeeeeeeee466666666666ccccccceeeeeeeeeeeeeeeeeeeeeeefeee7777
-    ffcfcccceeeeeeeeeeee77777777777777777777777777777777668668686cccb44beeee4eeed4eeeeeeeccc6cfcceecceeeeeeeeeeeeb666666b6666cccccceeeeeeeeeeeeeeeeeeeeeeeef7777777
-    ffcccfccceeeeeeeeeee4444777777777777777777777777777766866668c6cfe44eeeee4eeebbeeeeeeecfc666cceeeeefeeeeeeeeeeb66b7777bb6bcfccccccccccceeeccccccccccccceee777777
-    cfcccfccceeeeeeeeeeeeee44e4477777777777777777777777766866668ccfee4eeeeee4eeebbeeeeeefbcccc66ccceeeefeeeeeeeecb777b6bb776bcfcccccccccccb4dcccc8cc88c88cce7777777
-    fcfccfccceeeeeeeeeeeeeeeeee777777777777777777777777666666688cccee4eeeeee4eee4d4ee4befb677777ccceeeefeeeeeeeeed66666666b7beefccccc66866ee7c68688888888cbe7777777
-    cffcffcccfeeeeeeeeeeeeeebee77777777777777777eb77777666666666cccee4eeeeeeeeedd4eeeebff67777777cceeeeceeeeeeebdc66666866677ecfcccc88886bdedc86888888888cb77777777
-    ffffffffcceeeeeeeeeeebbbbdbb7777777777777bbbbddb777766666668ccc4eeeeeeeeeeeed444eebef66777777eeeeeefeeeeccc686666666666677cfccc668666bbeebc88888888888c777777ee
-    ffffcccffceeeeeeeeeeeeebbbbb7777777777777ebbbb1dbb7666666668ccc4eeeeeceeeeeed444eebcc66777777eeeeeeeeeeec6666666666666666bccccc66666cbeeebc86888888888c7777e7ee
-    ffe77777cceeeeeeeeeeeeeeeee77777777777777ccccbbbb77696666668ccc4eeeeeceeeee4d4eeeebcc6677777777eeeeeeecc666666866666666666cccc66866bcbfefdb6688888888887777e777
-    fe777777fcfeeeeeeeeeeeeee44477777777e777e7eee7777d7666666668ccbeeeeeecceeeee7eefeebcf7777777777efeeecc668866666666666866666cc866b66cbeeeedd688888888888c77eeeee
-    f7777777eeeeeeeeeeeeeee4e74477777777e777eeeee7777d7c66666668ccbeeeeeeccfeee7777e7ebcf7777777e77efeec66666666666666666866666cc666b66beefee4bc86688888888ceeeeeee
-    ff77777eccceeeeeeeee44eeeb7e7e777777e754554eeebbbbdc66666666ccbeeeeeccc7777777777ebee77777777777eec6666666666666666666666668866b68cbeeeeee4cc8888888888c7e77eee
-    fe7777ecfcceeeeeeeeeeeeeeeeeee77e777e75555547eddbbbc66c66666ccbeeeeeccc77777777777eee777777777e7776668666666666666666686666666966cceeffeeeeeb888888888887e7eeee
-    e7ee77777eeeeeeeeeeeeeeeeeeeeee7777eee44444eebbded76666c666cccbeeeeecc77e7777777e777777777777777766666666666666666666686666666bcbeeeeeeeeee4ecc868666666c7e77ee
-    fef777777feeeee77eeeeeeeeee7e7e77e7eeeeeeeeebebbbd7666666c66ccbeeeeeeccee777777777777777777e777666686666686666666666668666666cccbeeeeeeeeeee4ebc66666666c7ee7ee
-    eeee77777efee77777e7777eeeeee77e7ee77e7be44ed4ebbd7776666c6ccbeeeeeeeecce7777777ee777777eee7e66666666666686666666666668666696beeefeeeeeeeeeee4ebccccc688ccee7ee
-    fff777777eeee777e777777eeeebeeeeeee77e7b44444eee77777c666ccccbeeeeeefeccce7777777f7e7777ee77c66666666666688666666666866866666eeeeeeeeeeeeeeeefe44dbcbcbbce7e7ee
-    fef77777777ee77777777e77eeeee7eefee77e77ddbddb4b77f6cc666ccccbeeeeeeffeeee7777777eeee777ee77666666666666668666666668866666666ceeeeeeeeeeefeeeeeeeeeee4ebeeeeeee
-    fce77e7777777e7777e77eeeeefeee7ee7e7ee77dddbbb4b7cfccc666ccccbeeeeeeffffe777777777e7f777ee76666666666666666666666666666699666ceeeeeeeeeeeeeeeeeeeeeeeeefeeeeeee
-    fccfee7777777777777eeeeeeefcee77ee7eee7dd7dd7d777cfccf666ccce4444e44eeee7777777ee7f7ee77e7666666666666666666666666668696666666ceeeeeeeeeeeeeeeeeeeeeeeeee7cceee
-    fffee7777777777e7e7eecceeeffcee7ee7eee7dddddd7777cfcff7668ce444444eeeee777777777ffceeeeec6666666686666666666666666668666666666ceeeeeeeeef7eeeeeeeeeeeeeeeeeeeee
-    ffffee77777777777eeeeceeeeeefeeeeefe7e7bdddddddd7ccccc7cffe4444744444b77777777777eefecec666666666666666666666666666666666666666eeeeeeeeee7eeeeeeeeeeeeeeeeeeeee
-    ffe7ee777777e77777ee7feeeeeeeeeeeeeeeebbbddddddddbdb777cbdddd77774444777e777777777efcfc6666666668666666666666666666666666666666eeeeeeeeee7eeeeeeeeeeeeefeefeee7
-    fef77777e7777777eeee77eeeeeeeeeecfeeeebbbddddbbddddddddbbbdb7e77777bdd7e7ee7777777eefc66666666666666666666666666666666666666666ceeeeeeeeeeeeeeeeeeeeeeeeeeeee77
-    fee7777777e7ee777777777eeeeeeeeeeeeeeeeebbdbbddbbbbbbbbbddbbdddddbbbbbbbbee777e77e7ec6666666666666666668666666666666686666666666ceeeeeeee7eeeeeeeeeeeeefeeeeee7
-    fce7777e77777e77777eee77eeeeeeeee7777eeeebbbbbbbbbbdddddbbbbbbbbbbdbdddddeeee7ee7eec66666666668666666866666666666666666666666666ceeeeeeee7eeeeeeeeeeeeeeeeeeeee
-    ffe777777777777777777feeeeeeeeeeeeebbbbb7eebbbbbbbbbbbbdbbbbbbbbbbbbbbbbbbbeeeeeecf666666666666666666666666666666666666666666666ceeeeeeeeefeeeeeeeeeeeeefeeeeee
-    fe777777e77ee7777777eeefeefeeeeeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeccceeecc6666666666666666666666666666666666666666666666eeeeeeeeefeeeeeeeeeeeeeeeeeeee
-    7777777777777777777eeeeffeeeefeeeeeebbebebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeccccecc66666666666666666666666666666666668666666666666ceee7eeeeeeeeeeeeeeeeee7eeeeee
-    e77777777777777e77eeeeeeeeeeeeeffeeeeeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbeebbeeccccecc66666666666666666666666666666666666666666666666ceee7eeeeeeeeeeeeeeeeee77eeeee
-    e77e77777eeee7e7eeee7efeeeeeeeeeeeeebbbbeebbbbbbbbbbbbbbbbbbebbbeeebeecceeeeecec6666666666666666666666666666666666666666666666666cceeeceeeeeeeeeeeeeeeee7eeeeee
-    eee7dddd77eeeee7eeeeeeeeeeeeeeeeeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbeebeecceebeeecc66666666666666666666666666666666666666666666666666cececceeeeeeeeeeeeeeeee7eeeee
-    ecbbe7777e7ddfeeffeeeeeeeeeeeeeccceeeeeeeeeeebeeeeebbbbbbbbbbbbbbbbbbbbbbeeeeec6666666666666666666666666666666666666666666666666666ecccccccceeeeeeeeeeee777eeee
-    fbceee77eeeebbeeeee77eeeeeeeeccccceeeecceeeeeeceebbbbbbbbbeebbbbbeeebebbbeeeee66666666666666666666666666666666666666666666666666666ceccccccceeeeeeeeeeeee777e77
-    bbb77e7e777e7777ee7e7eeeeeeeeeeeeeeeeccceeeeebebbbbbbbbbeebbbbbbbbbbbebbeeeeec66666666666666666666666666666666666666688666666666666ceccccccceeeeeeeeeeeee7777ee
-    ebee77e7e77e7777e77e7eeeeeeeeeeeeeeeeccccceceeebbbbbbbbbbbbbbbbbbbbbeebbbbbbb666666666666666666666666666666666666666688666666666666ceccccccceeeeeeeeeeeeee777ee
-    beeee777ee777777ee777eeeeeee7eeeebbbccccccceebbbbbbbbeeeeeeebbbbbbbbbbbbbbbbb6666666666666666666686666666666666666666666666666666666ecccccccceeeeeeeeeeeceee7ee
-    ebbee7777e777777eee7eeeeee77e7eeeccbeceeccceebbbbbbbbbeeeebbbbbbbbbbbbbbbbbb66666666666666666666666666666666666666666666666666666666eeccccccceeeeeeeeeeecfeeeee
-    bcbe7e777ee77777e777777e77777eebbddcccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb666666666666666666686666666666666666666688866666666666666ceeeecccceeeeeeeeeeecccceee
-    ecccee7e77e77e777e7777e777777eeccbbdebbbbbbbbbbbbbbebbbbbbbbebbbbeeccceeec66666666666666666666668666666666666666666666666666666666666ceeecceeeeeeeeeeeeeeccccee
-    eccccf7777f7ee7777e77e7e77eeeccccccbeeccbbbbbbbbbbbeeeebbbeebbbbbbbccccecc66666666666666666689699666666666666666666666866666666666666ceeeceeeeeeeeeeeeeeeecceee
-    cccccccce77777e777eeeee777e7ecccccccbdbceeebbebbbbbbbbbbbbbbbbeccccccccec666666666666866666696666666666666666666666666666666666666666ceeeeeceeeeeeeeeeeeeecceee
-    ccccccfe777ee7e777e77777777eeccccbeccceeeeeeeeeeebbbbbbeeeeeeecccccccbbbb6666666666666666666666666666666666666666666666666666666666666beeceeeeeeeeeeeeeeeeccccc
-    ccccee777ee777ee777777e77f7eecccccccccccecceeebeeebccccccccccccccbbbbbbb66666666666666666696666666666666666666666666666666666666666666beeeeeeeeeeeeeeeeeeecceee
-    ccccccee777777eee7eeeeee77fecccccccfccbccccccccccccccccccccccccccccccccc66666666666666666666688666666666666666666666666666666666666666ceeceeeeeeeeeeeeeeecccccc
-    ccccccffcccccfcccccfcfccfccfcfcccccccccccffccfcffccfffccccccccccccccccffcffcccccccccccfcccffcccccffcccccccccccccccccccccfcccccccccccfccffccccfccccccccccccccccc
-    `)
-game.showLongText("Hej Prins. Anne er blevet fanget af heksen, red hende inden hun dør!!!", DialogLayout.Bottom)
+effects.blizzard.startScreenEffect()
+music.play(music.stringPlayable("E G F E D F E C5 ", 90), music.PlaybackMode.UntilDone)
+story.printText("En mørk aften, fredag d.13 Blev prinsesse Anne fanget", 0, 50, 15)
+let Prinsesse = sprites.create(img`
+    . . . . . 5 . 8 . 5 . . . . . . 
+    . . . . 2 5 5 2 5 5 2 . . . . . 
+    . . . . 2 2 2 2 2 2 2 . . . . . 
+    . . . . . 5 5 5 5 5 . . . . . . 
+    . . . . 5 5 5 5 5 5 5 . . . . . 
+    . . . 5 5 5 d d d 5 5 5 . . . . 
+    . . 5 . 5 d 8 d 8 d 5 . 5 . . . 
+    . 5 . 5 . d d d d d . 5 . 5 . . 
+    . 5 5 . . . d 2 d . . . 5 5 . . 
+    5 . . . d 3 3 3 3 3 d . . . 5 . 
+    . . . d d 3 3 3 3 3 d d . . . . 
+    . . d d . 3 3 3 3 3 . d d . . . 
+    . . . . . 3 3 3 3 3 . . . . . . 
+    . . . . 3 3 3 3 3 3 3 . . . . . 
+    . . . 3 3 3 d . d 3 3 . . . . . 
+    . . . 3 3 . d . d . 3 3 . . . . 
+    `, SpriteKind.Player)
+Prinsesse.setPosition(140, 100)
+pause(5000)
+pause(2000)
+story.printText("Det var den onde troldmand Dlop, der stod bag dette", 10, 80, 15)
+let Troldmand = sprites.create(img`
+    . . . . 1 1 1 1 1 1 1 1 . . . . 
+    . . . . 1 f f f f f f f 1 . . . 
+    . . . . 1 f f f f f f f f 1 1 . 
+    . . . 1 1 f f f f f 1 f f f 1 1 
+    . . 1 1 e f f f f f 1 1 f f f 1 
+    . . 1 f f f f f f f f f 1 f f 1 
+    . 1 1 e d d d d d d d f e 1 1 1 
+    . 1 f f d d 2 d 2 d d f e 1 . . 
+    . 1 1 f d d d d d d d f 1 1 . . 
+    . . 1 f d 2 2 2 2 2 d f 1 . . . 
+    . . 1 f 2 d d d d d 2 e 1 . . . 
+    . 1 1 f d d d d d d d e f 1 . . 
+    1 1 1 f f f f f f f f e f 1 1 . 
+    f f e e e e e e e e e e f f 1 1 
+    f e f f f f f f f f f f f f f 1 
+    f . . . . . . . . . . . . . f f 
+    `, SpriteKind.Player)
+Troldmand.setPosition(140, 80)
+pause(5000)
+pause(2000)
+story.printText("Kun én kan redde prinsesse Anne..", 10, 80, 15)
+pause(5000)
+story.printText("PRINS XXX !", 10, 80, 15)
+let Prins = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e e e e e . . . . 
+    . . . . . e e e e e e e e . . . 
+    . . . . . e d d d d d d e . . . 
+    . . . . . d d 6 d 6 d d d . . . 
+    . . . . . . d d d d d d . . . . 
+    . . . . . . . d f d d . . . . . 
+    . . . . . . . . d d . . . . . . 
+    5 . . . d d 8 8 8 8 8 8 d d . . 
+    5 5 . d d d 8 8 8 8 8 8 d d d . 
+    5 5 5 d . . 8 8 8 8 8 8 . . d . 
+    . 5 d . . . 8 8 8 8 8 8 . . . d 
+    . . . . . . 2 2 . . 2 2 . . . . 
+    . . . . . . 2 2 . . 2 2 . . . . 
+    `, SpriteKind.Player)
+Prins.setPosition(140, 60)
+pause(5000)
+story.printText("Og nårh jo, så var der kong gulerod. Han var ikke til stor hjælp, pga alderdom. Men han kendte vejen til Troldmandens hule", 10, 80)
+let Kong = sprites.create(img`
+    . . . . . 7 7 7 7 7 7 7 . . . . 
+    . . . . . 7 7 7 7 7 7 . . . . . 
+    . . . . . . 7 7 7 7 7 . . . . . 
+    . . . 4 4 4 4 4 4 4 4 4 4 4 . . 
+    . . . . 4 4 7 4 4 7 4 4 4 . . . 
+    . . . . 4 4 4 4 4 4 4 4 4 . . . 
+    . . . . 4 7 4 4 4 4 7 4 4 . . . 
+    . . . . . 4 7 7 7 7 4 4 . . . . 
+    . . . . . 4 4 4 4 4 4 4 . . . . 
+    . . . . . . 4 4 4 4 4 . . . . . 
+    . . . . . . 4 4 4 4 4 . . . . . 
+    . . . . . . . 4 4 4 4 . . . . . 
+    . . . . . . . 4 4 4 . . . . . . 
+    . . . . . . . 4 4 4 . . . . . . 
+    . . . . . . . 4 4 4 . . . . . . 
+    . . . . . . . 4 4 4 . . . . . . 
+    `, SpriteKind.Player)
+Kong.setPosition(141, 23)
